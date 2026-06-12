@@ -15,3 +15,4 @@ class HabbitSerializer(ModelSerializer):
         """Функция валидации полей модели привычки"""
         habbit = Habbit(**attrs)
         habbit.clean()
+        return attrs
