@@ -8,6 +8,10 @@ from dotenv import load_dotenv
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv(override=True)
+if os.getenv("DJANGO_ENV") == "docker":
+    load_dotenv(".env.docker")
+else:
+    load_dotenv(".env")
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
