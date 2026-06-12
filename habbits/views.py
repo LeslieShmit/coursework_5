@@ -68,4 +68,3 @@ class PublishedHabbitListView(ListAPIView):
     permission_classes = [
         AllowAny
     ]  # Любой пользователь может видеть публичные привычки
-
