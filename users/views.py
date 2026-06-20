@@ -50,8 +50,3 @@ class UserDestroyApiView(DestroyAPIView):
 
     queryset = User.objects.all()
     serializer_class = UserSerializer
-
-
-from django.shortcuts import render
-
-# Create your views here.
